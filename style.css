@@ -1,0 +1,124 @@
+/*
+.skranji-regular {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+body{
+    font-family: "Skranji", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+.navbar{
+    padding: 3rem;
+}
+.navbar-brand{
+    width: 40%;
+}
+.navbar-brand img{
+    width: 7rem;
+}
+.brand-text-container{
+    margin-top: 1rem;
+}
+.brand-text-container h1{
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    margin: 0;
+}
+.brand-text-container p{
+    margin: 0;
+}
+.navbar-nav{
+    justify-content: space-around;
+    width: 75%;
+}
+
+.nav-link{
+    transition: .3s;
+}
+.nav-link:hover{
+    border-bottom: 5px solid red;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
+
+
+@media (min-width: 450px) and (max-width: 767px){
+    .navbar{
+        padding: 2rem;
+    }
+    .navbar-brand img{
+        width: 6rem;
+    }
+    .brand-text-container{
+        margin-top: 1rem;
+    }
+    .brand-text-container h1{
+        font-family: "Skranji", system-ui;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .brand-text-container p{
+        margin: 0;
+        font-size: .9rem;
+    }
+    .navbar-collapse ul{
+        margin: 2rem auto;
+    }
+
+}
+@media (min-width: 250px) and (max-width: 449px){
+    .navbar{
+        padding: 1.5rem;
+    }
+    .navbar-subcontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-brand{
+        width: 100%;
+    }
+    .navbar-brand img{
+        width: 5.5rem;
+    }
+    .brand-text-container{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .brand-text-container h1{
+        font-family: "Skranji", system-ui;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .navbar-toggler{
+        margin: 2rem auto;
+    }
+    
+    .navbar-collapse ul{
+        margin: 0 auto;
+    }
+}
+
+h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+.spinner-border{
+    margin: 20rem auto 3rem;
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.2rem;
+}
