@@ -14,6 +14,7 @@ body{
     font-family: "Skranji", system-ui;
     font-weight: 200;
     font-style: normal;
+    background-color: #F2F3F4;
 }
 .navbar{
     padding: 3rem;
@@ -41,16 +42,11 @@ body{
     justify-content: space-around;
     width: 75%;
 }
-
-.nav-link{
-    transition: .3s;
+.nav-item:hover{
+    box-shadow: 6px 3px 3px #A9A9A9;
+    transition: .5s;
+    scale: 1.1;
 }
-.nav-link:hover{
-    border-bottom: 5px solid red;
-    font-size: 1.3rem;
-    border-radius: 1rem;
-}
-
 
 @media (min-width: 450px) and (max-width: 767px){
     .navbar{
@@ -112,13 +108,171 @@ body{
     }
 }
 
-h2{
-    text-align: center;
-    margin-top: 2rem;
+/* hero section */
+.hero-container{
+    display: flex;
+    width: 90%;
+    margin: 6rem auto;
+    align-items: center;
+    justify-content: space-around;
 }
-.spinner-border{
-    margin: 20rem auto 3rem;
-    width: 6rem;
-    height: 6rem;
+.hero-carousel-container{
+    width: 35%;
+}
+.hero-carousel-container img{
+    border-radius: 50%;
+    width: 100%;
+    height: 500px;
+}
+.hero-content-container{
+    width: 40%;
+}
+
+.hero-content-container h1{
+    margin: 1rem 0;
+}
+.hero-content-container p{
+    margin: 1rem 0 2rem;
     font-size: 1.2rem;
+}
+.hero-social-container{
+    width: 100%;
+    list-style: none;
+    color: black;
+    justify-content: start;
+    padding: 0;
+}
+.social-item:hover{
+    box-shadow: 6px 3px 3px #A9A9A9;
+    transition: .5s;
+    scale: 1.1;
+}
+
+.social-item a{
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.codewars a{
+    color: #660000;
+    font-weight: 700px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .hero-container{
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .hero-carousel-container{
+        width: 55%;
+    }
+    .hero-carousel-container img{
+        width: 100%;
+        height: 400px;
+    }
+    
+    .hero-content-container{
+        width: 60%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .hero-content-container h1{
+        margin: 1rem 0;
+    }
+    .hero-content-container p{
+        margin: 1rem 0 2rem;
+        font-size: 1.2rem;
+    }
+    .hero-social-container{
+        width: 100%;
+        list-style: none;
+        color: black;
+        justify-content: start;
+        padding: 0;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .hero-container{
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .hero-carousel-container{
+        width: 70%;
+    }
+    .hero-carousel-container img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .hero-content-container{
+        width: 80%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .hero-content-container h1{
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+    .hero-content-container p{
+        margin: 1rem 0 2rem;
+        font-size: 1.1rem;
+    }
+    .hero-social-container{
+        width: 100%;
+    }
+    .social-item a{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 250px) and (max-width: 449px){
+    .hero-container{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .hero-carousel-container{
+        width: 70%;
+    }
+    .hero-carousel-container img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .hero-content-container{
+        width: 80%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .hero-content-container h1{
+        margin: 1rem 0;
+        font-size: 1.4rem;
+    }
+    .hero-content-container p{
+        margin: 1rem 0 2rem;
+        font-size: .9rem;
+    }
+    
+    .social-item a{
+        font-size: 1.2rem;
+    }
+    .social-item a span{
+        display: none;
+    }
+
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("src/hero-image-code.jpg");
+    /* Set a specific height */
+    min-height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
