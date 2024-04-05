@@ -20,7 +20,7 @@ body{
     padding: 3rem;
 }
 .navbar-brand{
-    width: 40%;
+    width: 30%;
 }
 .navbar-brand img{
     width: 7rem;
@@ -40,13 +40,25 @@ body{
 }
 .navbar-nav{
     justify-content: space-around;
-    width: 75%;
+    width: 85%;
 }
-.nav-item:hover{
+.nav-link:hover{
     box-shadow: 6px 3px 3px #A9A9A9;
     transition: .5s;
     scale: 1.1;
 }
+@media (min-width: 768px) and (max-width: 1000px){
+    .navbar{
+        padding: 2rem;
+    }
+    .navbar-nav{
+        width: 70%;
+    }
+    .navbar-nav .about{
+        display: none;
+    }
+}
+
 
 @media (min-width: 450px) and (max-width: 767px){
     .navbar{
@@ -84,13 +96,17 @@ body{
     }
     .navbar-brand{
         width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
     }
+    
     .navbar-brand img{
         width: 5.5rem;
     }
     .brand-text-container{
         margin-top: 1rem;
-        width: 100%;
+        width: auto;
     }
     .brand-text-container h1{
         font-family: "Skranji", system-ui;
@@ -123,6 +139,7 @@ body{
     border-radius: 50%;
     width: 100%;
     height: 500px;
+    
 }
 .hero-content-container{
     width: 40%;
@@ -265,6 +282,8 @@ body{
 
 }
 
+
+/* parallax styling section */
 .parallax {
     /* The image used */
     background-image: url("https://imagizer.imageshack.com/img924/9642/d2TlvX.jpg");
@@ -277,3 +296,5 @@ body{
     background-size: cover;
 }
 
+
+/* About me Section */
