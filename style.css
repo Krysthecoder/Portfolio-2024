@@ -295,6 +295,19 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* special stylings */
+.dark-section{
+    background-color: #1B1B1B;
+}
+.white-text{
+    color: #F2F3F4;
+}
 
 /* About me Section */
+.about-me{
+    width: 100%;
+    padding: 6rem;
+}
+.write-section{
+    width: 95%;
+}
