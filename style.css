@@ -312,7 +312,7 @@ body{
     margin: 6rem auto;
     display: grid;
     width: 90%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 10rem 1fr 1fr;
     grid-template-rows: auto;
 }
 .aboutme-img-1{
