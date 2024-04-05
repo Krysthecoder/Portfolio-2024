@@ -288,7 +288,7 @@ body{
     /* The image used */
     background-image: url("https://imagizer.imageshack.com/img924/9642/d2TlvX.jpg");
     /* Set a specific height */
-    min-height: 300px;
+    min-height: 400px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -304,10 +304,264 @@ body{
 }
 
 /* About me Section */
-.about-me{
-    width: 100%;
+.aboutme{
+    text-align: center;
     padding: 6rem;
 }
-.write-section{
-    width: 95%;
+.aboutme-grid-container{
+    margin: 6rem auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.aboutme-img-1{
+    width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 20%;
+}
+.subtitle-aboutme1{
+    width: 100%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin-top: 6rem;
+}
+.write-aboutme1{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.grid-breakerline{
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.aboutme-img-2{
+    width: 100%;
+    height: 650px;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    border-radius: 20%;
+}
+.subtitle-aboutme2{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-top: 6rem;
+}
+.write-aboutme2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    .aboutme{
+        text-align: center;
+        padding: 6rem 3rem;
+    }
+    .aboutme-grid-container{
+        margin: 6rem 4rem;
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .aboutme-img-1{
+        width: 100%;
+        height: 80%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        border-radius: 20%;
+    }
+    .subtitle-aboutme1{
+        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+    .write-aboutme1{
+        grid-column-start: 3;
+        grid-column-end: 6;
+        
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 1rem;
+        width: 90%;
+        margin-left: 2rem;
+    }
+    .grid-breakerline{
+        grid-row-start: 4;
+        grid-row-end: 4;
+        padding: 3rem 0;
+    }
+    .aboutme-img-2{
+        width: 100%;
+        height: auto;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        border-radius: 20%;
+    }
+    .subtitle-aboutme2{
+        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        margin: 0 1rem 0 1rem;
+    }
+    .write-aboutme2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .aboutme{
+        text-align: center;
+        padding: 6rem 3rem 3rem;
+    }
+    .aboutme-grid-container{
+        margin: 3rem auto;
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .aboutme-img-1{
+        width: 100%;
+        height: 80%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .subtitle-aboutme1{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin: 0;
+    }
+    .write-aboutme1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        margin: 2rem 0 4rem;
+    }
+    .grid-breakerline{
+        display: none;
+    }
+    .aboutme-img-2{
+        width: 100%;
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
+    .subtitle-aboutme2{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 11;
+        grid-row-end: 11;
+        margin: 3rem 0 0;
+    }
+    .write-aboutme2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 12;
+        margin: 2rem 0;
+    }
+}
+@media (min-width: 250px) and (max-width: 449px){
+    .aboutme{
+        text-align: center;
+        padding: 6rem 3rem 1rem;
+    }
+    .aboutme-grid-container{
+        margin: 3rem auto;
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .aboutme-img-1{
+        width: 100%;
+        height: 80%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .subtitle-aboutme1{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin: 0;
+    }
+    .write-aboutme1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        margin: 2rem 0 4rem;
+    }
+    .grid-breakerline{
+        display: none;
+    }
+    .aboutme-img-2{
+        width: 100%;
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 10;
+    }
+    .subtitle-aboutme2{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 11;
+        grid-row-end: 11;
+        margin: 3rem 0 0;
+    }
+    .write-aboutme2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 12;
+        margin: 2rem 0;
+    }
+}
+
+
+
+.special-phrase{
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 100px;
 }
