@@ -6,3 +6,5 @@ function relocate_home()
 function relocate_github() {
     window.open('https://github.com/Krysthecoder', '_blank');
 }
+
+
