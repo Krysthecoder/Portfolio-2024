@@ -88,14 +88,15 @@ body{
 }
 @media (min-width: 250px) and (max-width: 449px){
     .navbar{
-        padding: 1.5rem;
+        padding: 2rem 0;
+        width: 90%;
     }
     .navbar-subcontainer{
         display: flex;
         flex-direction: row;
     }
     .navbar-brand{
-        width: 100%;
+        width: auto;
         justify-content: space-between;
         margin: 0;
         padding: 0;
@@ -112,8 +113,11 @@ body{
         font-family: "Skranji", system-ui;
         font-weight: 700;
         font-style: normal;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 0;
+    }
+    .brand-text-container p{
+        font-size: .9rem;
     }
     .navbar-toggler{
         margin: 2rem auto;
@@ -295,6 +299,87 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.special-phrase{
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+.special-phrase p{
+    margin: auto;
+    padding: 4rem;
+    border-radius: .5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .parallax {
+        /* The image used */
+        background-image: url("https://imagizer.imageshack.com/img924/9642/d2TlvX.jpg");
+        /* Set a specific height */
+        min-height: 500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .special-phrase{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 8rem;
+    }
+    .special-phrase p{
+        margin: auto;
+        padding: 4rem;
+        border-radius: .5rem;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 767px){
+    .parallax {
+        /* The image used */
+        background-image: url("https://imagizer.imageshack.com/img924/9642/d2TlvX.jpg");
+        /* Set a specific height */
+        min-height: 500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .special-phrase{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8rem;
+    }
+    .special-phrase p{
+        margin: auto;
+        padding: 4rem;
+        border-radius: .5rem;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 449px){
+    .parallax {
+        /* The image used */
+        background-image: url("https://imagizer.imageshack.com/img924/9642/d2TlvX.jpg");
+        /* Set a specific height */
+        min-height: 300px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .special-phrase{
+        display: none;
+    }
+
+}
+
 /* special stylings */
 .dark-section{
     background-color: #1B1B1B;
@@ -302,6 +387,13 @@ body{
 .white-text{
     color: #F2F3F4;
 }
+.dark-red-text{
+    color: #660000;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 /* About me Section */
 .aboutme{
@@ -558,10 +650,159 @@ body{
     }
 }
 
+/*Service Section*/
+.service-container{
+    text-align: center;
+    margin: 6rem 3rem;
+}
+.service-content-container{
+    padding: 4rem;
+}
+.service-block{
+    border: 2.5px solid #1B1B1B;
+    border-radius: 1rem;
+    margin: 3em .5rem;
+    padding: 0 0  4rem 0;
+    transition: all 0.5s ease;
+}
+.service-block:hover{
+    color: #F2F3F4;
+    background-color: #1B1B1B;
+}
+.service-block:hover .service-image1{
+    filter: invert(100%)
+}
+.service-image1{
+    width: 10rem;
+    padding-top: 3rem;
+}
 
-
-.special-phrase{
-    width: 40%;
+.card-text{
+    width: 90%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: .5rem;
+}
+.service-options{
+    padding-top: 2rem;
+}
+.service-btn{
+    background-color: #F2F3F4;
+    border: 1px solid #660000;
+    color: #660000;
+    transition: all 0.5s ease
+
+}
+.service-btn-schedule{
+    background-color: #660000;
+    border: none;
+    color: #F2F3F4;
+    transition: all 0.6s ease-in-out
+}
+
+.service-btn:hover{
+    background-color: #660000;
+    border: 1px solid #F2F3F4;
+    color: #F2F3F4;
+    transition: all 0.5s ease-in-out
+}
+.service-btn-schedule:hover{
+    background-color: #F2F3F4;
+    border: solid 1px #F2F3F4;
+    color: #660000 ;
+}
+@media (min-width: 992px) and (max-width: 1300px){
+    .service-content-container{
+        padding: 2rem;
+    }
+    .card-title{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .service-options{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .btn{
+        width: 80%;
+        margin: 1rem auto 0;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .service-container{
+        text-align: center;
+        margin: 3rem auto;
+        width: 100%;
+
+    }
+    .service-content-container{
+        padding: 1rem;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .service-block{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .service-image1{
+        width: 6rem;
+    }
+    .card-title{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .card-text{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: .5rem;
+        font-size: .9rem;
+    }
+    .service-options{
+        padding-top: 2rem;
+        
+    }
+    .btn{
+        font-size: 1rem;
+    }
+
+}
+@media (min-width: 250px) and (max-width: 449px){
+    .service-container{
+        text-align: center;
+        margin: 3rem auto;
+        width: 100%;
+
+    }
+    .service-content-container{
+        padding: 1rem;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .service-block{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .service-image1{
+        width: 6rem;
+    }
+    .card-title{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .card-text{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: .5rem;
+        font-size: .9rem;
+    }
+    .service-options{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        font-size: 1rem;
+        width: 85%;
+        margin: 1rem auto;
+    }
+
 }

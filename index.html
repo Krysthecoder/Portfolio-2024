@@ -34,8 +34,10 @@
             <a class="navbar-brand d-flex" href="#">
                 <img src="https://imagizer.imageshack.com/img924/5016/Qj94Ia.png" alt="">
                 <div class="container d-flex flex-column brand-text-container">
-                    <h1>Krysthopher R.</h1>
-                    <p>Your software Dev.</p>
+                    <h1>
+                        <span class="dark-red-text">K</span>rysthopher R.
+                </h1>
+                    <p><span class="dark-red-text">Y</span>our <span class="dark-red-text">s</span>oftware <span class="dark-red-text">D</span>ev.</p>
                 </div>
             </a>
 
@@ -50,10 +52,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item about">
-                        <a class="nav-link" href="#">About me</a>
+                        <a class="nav-link" href="#About-me">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#service-section">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Projects</a>
@@ -89,7 +91,7 @@
         </div>
         <div class="hero-content-container">
             <h1>Front End Developer.</h1>
-            <p>FPassionate about technology, problem solver and team oriented, ready to strike any challenge and come up with creative solutions to complex issues.<br>In Love with JavaScript.
+            <p>Passionate about technology, problem solver and team oriented, ready to strike any challenge and come up with creative solutions to complex issues.<br>In Love with JavaScript.
             </p>
             <ul class="hero-social-container d-flex justify-content-between">
                 <li class="social-item"><a href="https://www.linkedin.com/in/krysthopher-ruiz/" target="_blank"><i class="bi bi-linkedin"></i> <span>LinkedIn</span></a></li>
@@ -103,7 +105,7 @@
     <div class="parallax"></div>
 
     <!--About me section -->
-    <section class="aboutme dark-section">
+    <section class="aboutme dark-section" id="About-me">
         <h1 class="title-section white-text" data-aos="fade-down">Krysthopher Rivera</h1>
 
         <br>
@@ -121,7 +123,7 @@
             
             <div class="grid-breakerline"></div>
             
-            <img src="https://imagizer.imageshack.com/img922/479/hzSeGW.png" alt="passion image" class="aboutme-img-2" data-aos="fade-left" data-aos-duration="1000">
+            <img src="https://imagizer.imageshack.com/img922/479/hzSeGW.png" alt="passion image" class="aboutme-img-2" data-aos="fade-up" data-aos-duration="3000">
             
             <h2 class="subtitle-aboutme2 white-text order0" data-aos="fade-right" data-aos-duration="1300">
                 My passion!
@@ -132,18 +134,78 @@
         </div>
     </section>
 
-
+    <!--parallax section working as br-->
     <div class="parallax">
-        <p class="special-phrase white-text">  <!-- Will work in a phrase generator for this part-->
-            “Mantén este pensamiento a punto al amanecer, y durante todo el día y la noche: sólo hay un camino hacia la felicidad, y consiste en renunciar a todo lo que está fuera de tu esfera de elección, sin considerar nada más como tu posesión, entregando todo lo demás a Dios y a la Fortuna”
-        </p>
+        <div class="special-phrase">
+            <p class="dark-section white-text" data-aos="zoom-in" data-aos-duration="1000">  <!-- Will work in a phrase generator for this part-->
+                “Mantén este pensamiento a punto al amanecer, y durante todo el día y la noche: sólo hay un camino hacia la felicidad, y consiste en renunciar a todo lo que está fuera de tu esfera de elección, sin considerar nada más como tu posesión, entregando todo lo demás a Dios y a la Fortuna”
+            </p>
+        </div>
+    </div>
+
+    <!--Service section-->
+    <div class="container-fluid" id="service-section">
+        
+        <div class="service-container">
+            <h1 class="title-section" data-aos="fade-up" data-aos-duration="500">Services</h1>
+            
+            <div class="service-content-container row" >
+                
+                <div class="col-lg-4">
+                    <div class="card-body service-block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <img src="https://imagizer.imageshack.com/img922/4094/881ODK.png" alt="" class="service-image1">
+                        <h2 class="card-title">Web Development</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="service-options d-flex justify-content-evenly">
+                            <input type="button" class="btn btn-primary service-btn" value="Contact-Me" onclick=" relocate_home()">
+                            <input type="button" class="btn btn-primary service-btn-schedule" value="Schedule a meeting" onclick=" relocate_home()">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card-body service-block"
+                    data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <img src="https://imagizer.imageshack.com/img922/4094/881ODK.png" alt="" class="service-image1">
+                        <h2 class="card-title">Web Development</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="service-options d-flex justify-content-evenly">
+                            <input type="button" class="btn btn-primary service-btn" value="Contact-Me" onclick=" relocate_home()">
+                            <input type="button" class="btn btn-primary service-btn-schedule" value="Schedule a meeting" onclick=" relocate_home()">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4">
+                    <div class="card-body service-block"
+                    data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                        <img src="https://imagizer.imageshack.com/img922/4094/881ODK.png" alt="" class="service-image1">
+                        <h2 class="card-title">Web Development</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="service-options d-flex justify-content-evenly">
+                            <input type="button" class="btn btn-primary service-btn" value="Contact-Me" onclick=" relocate_home()">
+                            <input type="button" class="btn btn-primary service-btn-schedule" value="Schedule a meeting" onclick=" relocate_home()">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </div>
     </div>
     
+
+    <!--parallax section working as br-->
+    <div class="parallax">
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
