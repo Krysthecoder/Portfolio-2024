@@ -806,3 +806,107 @@ body{
     }
 
 }
+
+/* Project Styling section */
+.project-container{
+    text-align: center;
+    padding: 6rem 0;
+}
+.project-content-container{
+    padding: 1.8rem 0;
+    align-items: center;
+    border: 3px solid #660000;
+    border-radius: .5rem;
+    margin: 6rem auto;
+}
+.project-text-container{
+    width: 40%;
+}
+.project-image-card{
+    width: 30%;
+}
+.project-image-card img{
+    width: 15rem;
+    height: 16rem;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+} 
+.project-image-card .card-body{
+    display: none;
+}
+.project-options input{
+    width: 30%;
+}
+.order1{
+    order: 1;
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .project-container{
+        text-align: center;
+        padding: 6rem 0;
+    }
+    .project-content-container{
+        width: 75%;
+        margin: 6rem auto;
+    }
+    .project-text-container{
+        display: none;
+    }
+    .project-image-card{
+        width: 100%;
+        color: #F2F3F4;
+    }
+    .project-image-card img{
+        width: 8rem;
+        height: auto;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    } 
+    .project-image-card .card-body{
+        display: contents;
+    }
+    .card-title{
+        margin-top: 2rem;
+    }
+    .project-options{
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 250px) and (max-width: 449px){
+    .project-container{
+        text-align: center;
+        padding: 6rem 0;
+    }
+    .project-content-container{
+        width: 75%;
+        margin: 6rem auto;
+    }
+    .project-text-container{
+        display: none;
+    }
+    .project-image-card{
+        width: 100%;
+        color: #F2F3F4;
+    }
+    .project-image-card img{
+        width: 6rem;
+        height: auto;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    } 
+    .project-image-card .card-body{
+        display: contents;
+    }
+    .card-title{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+    .card-text{
+        font-size: .8rem;
+    }
+    .project-options{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
