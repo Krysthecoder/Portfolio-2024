@@ -329,6 +329,18 @@ body {
 /* parallax styling section */
 .parallax {
   /* The image used */
+  background-image: url("https://imagizer.imageshack.com/img922/8797/YUjL2R.jpg");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  /* The image used */
   background-image: url("https://imagizer.imageshack.com/img924/9642/d2TlvX.jpg");
   /* Set a specific height */
   min-height: 400px;
@@ -339,6 +351,31 @@ body {
   background-size: cover;
 }
 
+.parallax2{
+  background-image: url("https://imagizer.imageshack.com/img923/5787/dwRCCk.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3{
+  background-image: url("https://imagizer.imageshack.com/img923/9136/RBuwKR.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4{
+  background-image: url("https://imagizer.imageshack.com/img922/8762/IrXonf.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .special-phrase {
   width: 40%;
   margin: 0 auto;
@@ -793,6 +830,19 @@ body {
 }
 
 .service-btn-schedule:hover {
+  background-color: #f2f3f4;
+  border: solid 1px #f2f3f4;
+  color: #660000;
+}
+
+.service-btn:active {
+  background-color: #660000;
+  border: 1px solid #f2f3f4;
+  color: #f2f3f4;
+  transition: all 0.5s ease-in-out;
+}
+
+.service-btn-schedule:active {
   background-color: #f2f3f4;
   border: solid 1px #f2f3f4;
   color: #660000;
