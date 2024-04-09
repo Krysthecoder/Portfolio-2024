@@ -1,10 +1,14 @@
 function relocate_home()
 {
-    location.href = "http://127.0.0.1:5500/index.html";
+    location.href = "http://127.0.0.1:5500/index.html#Contact";
 } 
 
 function relocate_github() {
     window.open('https://github.com/Krysthecoder', '_blank');
+}
+
+function relocate_scheduling(){
+  window.open('https://calendly.com/krysthopher/30min', '_blank');
 }
 
 
