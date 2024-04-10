@@ -78,10 +78,15 @@ const phrase10 = "\"Tienes poder sobre tu mente, no sobre los eventos externos. 
 
 //dom
 let parallaxText = document.getElementById("parallaxText")
+let parallaxText2 = document.getElementById("parallaxText2")
+
+
 setInterval(testing, 6500);
+let arr = [phrase1, phrase2, phrase3, phrase4, phrase5, phrase6, phrase7, phrase8, phrase9, phrase10];
 
 function testing(){
-  let arr = [phrase1, phrase2, phrase3, phrase4, phrase5, phrase6, phrase7, phrase8, phrase9, phrase10];
   let index = Math.floor(Math.random() * 10);
   parallaxText.innerText =  arr[index];
+  let index2 = Math.floor(Math.random() * 10);
+  parallaxText2.innerText = arr[index2]; 
 }
