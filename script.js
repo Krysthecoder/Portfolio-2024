@@ -58,3 +58,30 @@ contactForm.addEventListener("submit", (e) => {
     }
   );
 });
+
+
+//////////////////////// 
+//Phrase generator
+///////
+
+//content
+const phrase1 = " \"No te perturbes por lo que no puedes controlar; en cambio, enfócate en lo que sí puedes.\"";
+const phrase2 = "\"La felicidad no depende de lo que tienes o de lo que eres, sino exclusivamente de lo que piensas.\"";
+const phrase3 = "\"No es lo que nos pasa lo que nos afecta, sino nuestra reacción a lo que nos pasa.\"";
+const phrase4 = "\"La vida es muy simple, pero insistimos en hacerla complicada.\"";
+const phrase5 = "\"No te preguntes qué necesita el mundo; pregúntate qué te hace sentir vivo y ve a hacer eso, porque lo que el mundo necesita es gente que ha cobrado vida.\"";
+const phrase6 = "\"El coraje no es la ausencia de miedo, sino el juicio de que algo es más importante que el miedo.\"";
+const phrase7 = "\"No basta con sobrevivir; uno tiene que ser digno de sobrevivir.\"";
+const phrase8 = "\"Busca en tu interior; ahí reside la fuente del bien, y esta puede fluir siempre si cavas.\"";
+const phrase9 = "\"No es porque las cosas son difíciles que no nos atrevemos; es porque no nos atrevemos que son difíciles.\"";
+const phrase10 = "\"Tienes poder sobre tu mente, no sobre los eventos externos. Date cuenta de esto, y encontrarás la fuerza.\"";
+
+//dom
+let parallaxText = document.getElementById("parallaxText")
+setInterval(testing, 6500);
+
+function testing(){
+  let arr = [phrase1, phrase2, phrase3, phrase4, phrase5, phrase6, phrase7, phrase8, phrase9, phrase10];
+  let index = Math.floor(Math.random() * 10);
+  parallaxText.innerText =  arr[index];
+}
