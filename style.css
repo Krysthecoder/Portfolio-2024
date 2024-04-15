@@ -152,24 +152,24 @@ body {
 /* hero section */
 .hero-container {
   display: flex;
-  width: 90%;
+  width: 85%;
   margin: 1rem auto 6rem;
   align-items: center;
   justify-content: space-around;
 }
 
 .hero-carousel-container {
-  width: 40%;
+  width: 50%;
 }
 
 .hero-carousel-container img {
-  border-radius: 50%;
-  width: 100%;
+  width: 500px;
   height: 500px;
+  object-fit: fill;
 }
 
 .hero-content-container {
-  width: 40%;
+  width: 50%;
 }
 
 .hero-content-container h1 {
@@ -217,6 +217,14 @@ body {
   color: #660000;
   font-weight: 700px;
 }
+@media (min-width: 1201px) and (max-width: 1272px) {
+  .hero-carousel-container img {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    object-fit: fill;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .hero-container {
@@ -229,8 +237,9 @@ body {
   }
 
   .hero-carousel-container img {
-    width: 100%;
+    width: 400px;
     height: 400px;
+    margin: 0 auto;
   }
 
   .hero-content-container {
@@ -268,8 +277,9 @@ body {
   }
 
   .hero-carousel-container img {
-    width: 100%;
+    width: 300px;
     height: 300px;
+    margin: 0 auto;
   }
 
   .hero-content-container {
@@ -308,8 +318,9 @@ body {
   }
 
   .hero-carousel-container img {
-    width: 100%;
+    width: 200px;
     height: 200px;
+    margin: 0 auto;
   }
 
   .hero-content-container {
@@ -340,7 +351,7 @@ body {
 /* parallax styling section */
 .parallax {
   /* The image used */
-  background-image: url("https://imagizer.imageshack.com/img922/8797/YUjL2R.jpg");
+  background-image: url("https://imagizer.imageshack.com/img923/3401/Uh8QjL.jpg");
   /* Set a specific height */
   min-height: 400px;
   /* Create the parallax scrolling effect */
@@ -380,7 +391,7 @@ body {
 }
 
 .parallax4{
-  background-image: url("https://imagizer.imageshack.com/img922/8762/IrXonf.png");
+  background-image: url("https://imagizer.imageshack.com/img924/149/C8ZXS0.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -494,287 +505,114 @@ body {
   padding: 6rem;
 }
 
-.aboutme-grid-container {
-  margin: 6rem auto;
-  display: grid;
-  width: 90%;
-  grid-template-columns: 1fr 1fr 10rem 1fr 1fr;
-  grid-template-rows: auto;
+.aboutme-img{
+  width: 500px;
+  border-radius: 1rem;
 }
 
-.aboutme-img-1 {
-  width: 100%;
+.aboutme-content-container{
+  margin: 8rem auto;
   height: auto;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border-radius: 20%;
 }
-
-.subtitle-aboutme1 {
-  width: 100%;
-  grid-column-start: 4;
-  grid-column-end: 6;
+.subtitle-aboutme{
+  padding: 4rem 0;
+  text-align: center;
+}
+.write-aboutme{
+  column-count: 2;
+  text-align: justify;
+  column-gap: 3rem;
+  margin: 2rem 8rem;
+  }
+.row{
   margin-top: 6rem;
-}
-
-.write-aboutme1 {
-  grid-column-start: 4;
-  grid-column-end: 6;
-}
-
-.grid-breakerline {
-  grid-row-start: 4;
-  grid-row-end: 4;
-}
-
-.aboutme-img-2 {
-  width: 100%;
-  height: 650px;
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 7;
-  border-radius: 20%;
-}
-
-.subtitle-aboutme2 {
-  width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  margin-top: 6rem;
-}
-
-.write-aboutme2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 7;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .aboutme {
     text-align: center;
-    padding: 6rem 3rem;
+    padding: 6rem 0 8rem;
   }
-
-  .aboutme-grid-container {
-    margin: 6rem 4rem;
-    display: grid;
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  
+  .aboutme-img{
+    width: 400px;
+    border-radius: 1rem;
+    margin-top: 6rem;
   }
-
-  .aboutme-img-1 {
-    width: 100%;
-    height: 80%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    border-radius: 20%;
-  }
-
-  .subtitle-aboutme1 {
-    width: 100%;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    margin-top: 0;
-    font-size: 1.4rem;
-  }
-
-  .write-aboutme1 {
-    grid-column-start: 3;
-    grid-column-end: 6;
-
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 1rem;
-    width: 90%;
-    margin-left: 2rem;
-  }
-
-  .grid-breakerline {
-    grid-row-start: 4;
-    grid-row-end: 4;
-    padding: 3rem 0;
-  }
-
-  .aboutme-img-2 {
-    width: 100%;
+  
+  .aboutme-content-container{
+    width: 85%;
+    margin: 8rem auto;
     height: auto;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    border-radius: 20%;
   }
-
-  .subtitle-aboutme2 {
-    width: 80%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    margin: 0 1rem 0 1rem;
+  .subtitle-aboutme{
+    padding: 4rem 0;
+    text-align: center;
   }
-
-  .write-aboutme2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    margin-right: 2rem;
-    margin-top: 1rem;
-  }
+  .write-aboutme{
+    column-count: 2;
+    text-align: justify;
+    column-gap: 3rem;
+    }
+  
 }
 
-@media (min-width: 450px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px){
   .aboutme {
     text-align: center;
-    padding: 6rem 3rem 3rem;
+    padding: 6rem 0 8rem;
   }
-
-  .aboutme-grid-container {
-    margin: 3rem auto;
-    display: grid;
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  
+  .aboutme-img{
+    width: 400px;
+    border-radius: 1rem;
+    margin-top: 6rem;
   }
-
-  .aboutme-img-1 {
-    width: 100%;
-    height: 80%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-  }
-
-  .subtitle-aboutme1 {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    margin: 0;
-  }
-
-  .write-aboutme1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    margin: 2rem 0 4rem;
-  }
-
-  .grid-breakerline {
-    display: none;
-  }
-
-  .aboutme-img-2 {
-    width: 100%;
+  
+  .aboutme-content-container{
+    width: 85%;
+    margin: 8rem auto;
     height: auto;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 8;
-    grid-row-end: 10;
   }
-
-  .subtitle-aboutme2 {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 11;
-    grid-row-end: 11;
-    margin: 3rem 0 0;
+  .subtitle-aboutme{
+    padding: 4rem 0;
+    text-align: center;
   }
-
-  .write-aboutme2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 12;
-    grid-row-end: 12;
-    margin: 2rem 0;
-  }
+  .write-aboutme{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
 }
 
-@media (min-width: 250px) and (max-width: 449px) {
+@media (min-width: 250px) and (max-width: 449px){
   .aboutme {
     text-align: center;
-    padding: 6rem 3rem 1rem;
+    padding: 6rem 0 8rem;
   }
-
-  .aboutme-grid-container {
-    margin: 3rem auto;
-    display: grid;
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  
+  .aboutme-img{
+    width: 200px;
+    border-radius: 1rem;
+    margin-top: 6rem;
   }
-
-  .aboutme-img-1 {
-    width: 100%;
-    height: 80%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-  }
-
-  .subtitle-aboutme1 {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    margin: 0;
-  }
-
-  .write-aboutme1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    margin: 2rem 0 4rem;
-  }
-
-  .grid-breakerline {
-    display: none;
-  }
-
-  .aboutme-img-2 {
-    width: 100%;
+  
+  .aboutme-content-container{
+    width: 85%;
+    margin: 8rem auto;
     height: auto;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 8;
-    grid-row-end: 10;
   }
-
-  .subtitle-aboutme2 {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 11;
-    grid-row-end: 11;
-    margin: 3rem 0 0;
+  .subtitle-aboutme{
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 1.5rem;
   }
-
-  .write-aboutme2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 12;
-    grid-row-end: 12;
-    margin: 2rem 0;
-  }
+  .write-aboutme{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: .9rem;
+    }
 }
 
 /*Service Section*/
@@ -865,36 +703,50 @@ body {
   color: #660000;
 }
 
-@media (min-width: 992px) and (max-width: 1300px) {
+@media (min-width: 767px) and (max-width: 1500px) {
+  .service-container {
+    text-align: center;
+    margin: 3rem auto;
+    width: 100%;
+  }
+
   .service-content-container {
-    padding: 2rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .service-block {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .service-image1 {
+    width: 6rem;
   }
 
   .card-title {
-    width: 80%;
-    margin: 1rem auto;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
-  .service-block {
-    border: 2.5px solid #1b1b1b;
-    border-radius: 1rem;
-    margin: 3em 0.5rem;
-    padding: 0 0 4rem 0;
-    transition: all 0.5s ease;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+
+  .card-text {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
   }
 
   .service-options {
+    padding-top: 2rem;
+    display: flex;
     flex-direction: column;
-    padding-top: 1rem;
   }
 
   .btn {
-    width: 80%;
-    margin: 1rem auto 0;
+    font-size: 1rem;
+    width: 85%;
+    margin: 1rem auto;
   }
 }
 
