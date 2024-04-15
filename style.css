@@ -188,6 +188,17 @@ body {
   justify-content: start;
   padding: 0;
 }
+.important-text{
+  font-size: 1.2rem;
+}
+.important-link{
+  color: #f2f3f4;
+  text-decoration: #d4c8c8 underline 2px;
+}
+.important-link:hover{
+  color: #f2f3f4;
+  text-decoration: #660000 underline 4px;
+}
 
 .social-item:hover {
   box-shadow: 6px 3px 3px #a9a9a9;
@@ -782,6 +793,11 @@ body {
   margin: 3em 0.5rem;
   padding: 0 0 4rem 0;
   transition: all 0.5s ease;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .service-block:hover {
@@ -802,10 +818,11 @@ body {
   width: 90%;
   margin: 0 auto;
   padding-top: 0.5rem;
+  height: 15rem;
 }
-
 .service-options {
-  padding-top: 2rem;
+  padding-top: 0rem;
+  width: 80%;
 }
 
 .service-btn {
@@ -856,6 +873,18 @@ body {
   .card-title {
     width: 80%;
     margin: 1rem auto;
+  }
+  .service-block {
+    border: 2.5px solid #1b1b1b;
+    border-radius: 1rem;
+    margin: 3em 0.5rem;
+    padding: 0 0 4rem 0;
+    transition: all 0.5s ease;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .service-options {
@@ -975,6 +1004,9 @@ body {
 
 .project-text-container {
   width: 40%;
+}
+.text-project{
+  padding: 2rem 0;
 }
 
 .project-image-card {

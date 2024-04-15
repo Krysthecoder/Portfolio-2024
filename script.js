@@ -11,7 +11,13 @@ function relocate_scheduling(){
   window.open('https://calendly.com/krysthopher/30min', '_blank');
 }
 
+function relocate_github_crypter(){
+  window.open('https://github.com/Krysthecoder/Oracle-Crypter-Challengue', '_blank');
+}
+function relocate_crypter_site(){
+  window.open('https://krysthecoder.github.io/Oracle-Crypter-Challengue/', '_blank');
 
+}
 //all elements from the DOM
 const contactForm = document.getElementById("contact-form");
 const { user_name, user_email, message, emailSent, submitBtn } =
