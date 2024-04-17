@@ -1,6 +1,6 @@
 function relocate_home()
 {
-    location.href = "http://127.0.0.1:5500/index.html#Contact";
+    location.href = "https://krysthecoder.github.io/Portfolio-2024/#Contact";
 } 
 
 function relocate_github() {
